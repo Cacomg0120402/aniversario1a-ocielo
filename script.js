@@ -70,7 +70,7 @@ function getURLParam(name) {
 function showDedicationText() { //seguidores
   let text = getURLParam('text');
   if (!text) {
-    text = `Para el amor de mi vida:\n\nDesde el primer momento supe que eras tú. Tu sonrisa, tu voz, tu forma de ser… todo en ti me hace sentir en casa.\n\nGracias por acompañarme en cada paso, por entenderme incluso en silencio, y por llenar mis días de amor.\n\nTe amo más de lo que las palabras pueden expresar.`;  } else {
+    text = `Para mi Morchii:\n\nYa cumplimos un añooo moooor, te amo demasiado en serio, los momentos que pasamos juntos son los mejores porque son contigo mi cielito bellaaaa, te amo con toda mi alma mi niñaaa no sabes lo feliz que me haces mi amooor. Nuestras salidas, momentos hormonales JAJA, son los mejores y más porque nos amamos muchititoo❤️🩷Gracias por confiar en mi y darme una segunda oportunidad para demostrarte que soy el hombre para ti.\n\n ERES LA MEJOR NOVIA DEL MUNDO MI AMOOR que no se te olvide, aunque peleemos nunca terminaremos porque nuestro amoor es muy grandeee shiii bb.\n\nTe amo demasiado mi CIELITOO 🩷 FELIZ ANIVERSARIO MI BB HERMOSAA💗`;  } else {
     text = decodeURIComponent(text).replace(/\\n/g, '\n');
   }
   const container = document.getElementById('dedication-text');
@@ -101,7 +101,7 @@ function showSignature() {
     dedication.appendChild(signature);
   }
   let firma = getURLParam('firma');
-  signature.textContent = firma ? decodeURIComponent(firma) : "Con amor, Zero";
+  signature.textContent = firma ? decodeURIComponent(firma) : "Con amor, tu novio que te ama muchito🩷";
   signature.classList.add('visible');
 }
 
@@ -146,8 +146,8 @@ function showCountdown() {
   const container = document.getElementById('countdown');
   let startParam = getURLParam('start');
   let eventParam = getURLParam('event');
-  let startDate = startParam ? new Date(startParam + 'T00:00:00') : new Date('2024-08-03T00:00:00'); 
-  let eventDate = eventParam ? new Date(eventParam + 'T00:00:00') : new Date('2025-08-03T00:00:00');
+  let startDate = startParam ? new Date(startParam + 'T00:00:00') : new Date('2024-07-03T00:00:00'); 
+  let eventDate = eventParam ? new Date(eventParam + 'T00:00:00') : new Date('2025-07-03T00:00:00');
 
   function update() {
     const now = new Date();
